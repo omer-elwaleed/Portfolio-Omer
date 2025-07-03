@@ -1,7 +1,7 @@
 [
 {
   "name": "Troubleshooting Chatbot",
-  "desc": "Extracts structured info from resumes using BERT + regex.",
+  "desc": "EA web-based AI chatbot designed to assist users in diagnosing and resolving common technical issues. Built with a JavaScript frontend and a Python (Flask) backend, the bot uses NLP techniques (via spaCy, NLTK, and Hugging Face transformers) to analyze user queries, detect intent, and provide relevant solutions. Includes sentiment detection, entity recognition, and a fallback escalation option for complex cases. Integrated with support documentation and optimized for real-time response.",
   "category": "nlp",
   "image": "chatbot",
   "tags": ["NLP", "BERT", "Regex", "Flask"],

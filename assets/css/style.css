@@ -25,7 +25,6 @@ body {
   opacity: 0;
 }
 
-
 *::selection {
   background: #2b3dda;
   color: #fff;
@@ -370,7 +369,6 @@ header .navbar ul li a:hover {
   height: auto;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-  mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -477,7 +475,6 @@ header .navbar ul li a:hover {
   transform: scale(1.05);
 }
 
-
 /* about media queries ends*/
 
 /* info section (About Me contact cards) starts */
@@ -536,7 +533,6 @@ header .navbar ul li a:hover {
   }
 }
 /* info section ends */
-
 
 /* about section ends */
 
@@ -724,24 +720,23 @@ header .navbar ul li a:hover {
 
 /* certification section starts */
 .certification-container .box {
-  flex: 1 1 28rem;
-  max-width: 70rem;
-  height: 20rem;
-  padding: 1.2rem;
-  font-size: 0.6rem;
-  overflow: hidden;
   display: flex;
-  gap: 1rem;
-  align-items: flex-start;
-  background: #fff;
-  border-radius: .5rem;
-  box-shadow: 0 .7rem 1rem rgba(0,0,0,.3);
+  flex-direction: row;
+  width: 80%;
+  border-radius: 0.5rem;
+  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: 0.3s;
+  background: rgb(252, 252, 252);
 }
 
 /* Limit image size */
 .certification-container .box .image img {
   max-height: 100%;
-  max-width: 6rem;
+  max-width: 7rem;
   object-fit: contain;
 }
 
@@ -759,11 +754,11 @@ header .navbar ul li a:hover {
 }
 
 .certification-container .box h4 {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .certification-container .box p {
-  font-size: 0.5rem; /* smaller paragraph */
+  font-size: 0.6rem; /* smaller paragraph */
 }
 /* certification section ends */
 

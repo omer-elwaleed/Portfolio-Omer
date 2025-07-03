@@ -68,7 +68,6 @@ document.addEventListener('visibilitychange',
         }
     });
 
-
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
     strings: [
@@ -147,12 +146,10 @@ function showProjects(projects) {
     reset: false
     });
 
-
     /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
     srtop.reveal('.education .box', { interval: 200 });
     srtop.reveal('.certification-container .box', { interval: 200 });
-
 
 
 }
@@ -170,7 +167,6 @@ VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
 // <!-- tilt js effect ends -->
-
 
 // pre loader start
 // function loader() {
@@ -213,7 +209,6 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
 })();
 // End of Tawk.to Live Chat
 
-
 /* ===== SCROLL REVEAL ANIMATION ===== 
 const srtop = ScrollReveal({
     origin: 'top',
@@ -242,7 +237,6 @@ srtop.reveal('.about .content p', { delay: 200 });
 srtop.reveal('.about .content .box-container', { delay: 200 });
 srtop.reveal('.about .content .resumebtn', { delay: 200 });
 
-
 /* SCROLL SKILLS */
 srtop.reveal('.skills .container', { interval: 200 });
 srtop.reveal('.skills .container .bar', { delay: 400 });
@@ -260,3 +254,5 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT 
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });*/
+
+
