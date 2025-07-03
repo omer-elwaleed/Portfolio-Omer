@@ -736,7 +736,7 @@ header .navbar ul li a:hover {
 /* Limit image size */
 .certification-container .box .image img {
   max-height: 100%;
-  max-width: 7rem;
+  max-width: 7.7rem;
   object-fit: contain;
 }
 
