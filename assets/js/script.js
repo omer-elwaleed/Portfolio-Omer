@@ -142,14 +142,17 @@ function showProjects(projects) {
 
     /* ===== SCROLL REVEAL ANIMATION ===== */
     const srtop = ScrollReveal({
-        origin: 'top',
-        distance: '80px',
-        duration: 1000,
-        reset: true
+    origin: 'top',
+    distance: '80px',
+    duration: 1000,
+    reset: false
     });
+
 
     /* SCROLL PROJECTS */
     srtop.reveal('.work .box', { interval: 200 });
+    srtop.reveal('.education .box', { interval: 200 });
+
 
 }
 

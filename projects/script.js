@@ -1,3 +1,4 @@
+let $grid;
 $(document).ready(function () {
 
     $('#menu').click(function () {
@@ -41,55 +42,74 @@ function getProjects() {
 
 
 function showProjects(projects) {
-    let projectsContainer = document.querySelector(".work .box-container");
-    let projectsHTML = "";
-    projects.forEach(project => {
-        projectsHTML += `
-        <div class="grid-item ${project.category}">
-        <div class="box tilt" style="width: 380px; margin: 1rem">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+  let projectsContainer = document.querySelector("#work .box-container");
+  let projectHTML = "";
+
+  projects.forEach(project => {
+    projectHTML += `
+    <div class="box tilt grid-item ${project.category}">
+      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="${project.name}" />
       <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
+        <div class="tag"><h3>${project.name}</h3></div>
         <div class="desc">
           <p>${project.desc}</p>
+          
+          ${project.tags ? `<div class="tags">
+            ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
+          </div>` : ''}
+
+          ${project.metrics ? `<div class="metrics">
+            ${Object.entries(project.metrics).map(([key, value]) => 
+              `<p><strong>${key.replace(/_/g, ' ')}:</strong> ${value}</p>`
+            ).join('')}
+          </div>` : ''}
+
           <div class="btns">
             <a href="${project.links.view}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>
             <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
         </div>
       </div>
-    </div>
-    </div>`
+    </div>`;
+  });
+
+  projectsContainer.innerHTML = projectHTML;
+
+// Re-apply tilt animation
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.3
     });
-    projectsContainer.innerHTML = projectsHTML;
 
-    // vanilla tilt.js
-    // VanillaTilt.init(document.querySelectorAll(".tilt"), {
-    //     max: 20,
-    // });
-    // // vanilla tilt.js  
+// Reinitialize Isotope
+    initIsotope();
+    $grid.isotope('reloadItems');
+    $grid.isotope('layout');
 
-    // /* ===== SCROLL REVEAL ANIMATION ===== */
-    // const srtop = ScrollReveal({
-    //     origin: 'bottom',
-    //     distance: '80px',
-    //     duration: 1000,
-    //     reset: true
-    // });
+  VanillaTilt.init(document.querySelectorAll(".tilt"), {
+    max: 15,
+  });
 
-    // /* SCROLL PROJECTS */
-    // srtop.reveal('.work .box', { interval: 200 });
+  const srtop = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 1000,
+    reset: true
+  });
 
-    // isotope filter products
-    var $grid = $('.box-container').isotope({
+  srtop.reveal('.work .box', { interval: 200 });
+
+
+    function initIsotope() {
+    $grid = $('.box-container').isotope({
         itemSelector: '.grid-item',
-        layoutMode: 'fitRows',
-        masonry: {
-            columnWidth: 200
-        }
+        layoutMode: 'fitRows'
     });
+}
+
+}
 
     // filter items on button click
     $('.button-group').on('click', 'button', function () {
@@ -98,7 +118,7 @@ function showProjects(projects) {
         var filterValue = $(this).attr('data-filter');
         $grid.isotope({ filter: filterValue });
     });
-}
+
 
 getProjects().then(data => {
     showProjects(data);

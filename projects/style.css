@@ -194,23 +194,27 @@ header .navbar ul li a:hover{
   color: #000;
   cursor: pointer;
 }
-.work .box-container{
+.work .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap:1.5rem;
+  justify-content: center;
+  gap: 2rem;
   margin: 2rem;
 }
-.work .box-container .box:hover{
-  flex:1 1 30rem;
-  border-radius: .5rem;
-  box-shadow: 0 .7rem 1rem rgba(0,0,0,.3);
-  position: relative;
-  overflow:hidden;
-  height:30rem;
+.work .box-container .box {
+  width: calc(33.333% - 2rem); /* 3 cards per row */
+  margin: 1rem;
+  height: 360px; 
   background: #fff;
-  border: none;
-  flex: 1 1 100%;
-  max-width: 100%;
+  border-radius: 0.7rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.work .box-container .box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 .7rem 1rem rgba(0,0,0,.3);
 }
 .work .box-container .box img{
   height: 100%;
@@ -225,6 +229,7 @@ header .navbar ul li a:hover{
   background:rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 .work .box-container .box .content .tag{
   display: flex;
@@ -274,6 +279,67 @@ header .navbar ul li a:hover{
   cursor: pointer;
 }
 
+.metrics {
+  margin-top: 0.8rem;
+}
+.metrics p {
+  font-size: 1.4rem;
+  color: #f5f5f5;
+  margin: 0.3rem 0;
+  font-weight: 500;
+}
+.metrics p strong {
+  color: #ffffff;
+}
+
+
+.project-tag {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  margin: 0.2rem 0.4rem 0 0;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.project-tag:hover {
+  background-color: #ffe44d;
+}
+
+
+/* Project tags */
+.project-tag {
+  display: inline-block;
+  background-color: #011aff;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.3rem 0.9rem;
+  margin: 0.3rem 0.3rem 0 0;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+.project-tag:hover {
+  background-color: #02094b;
+}
+
+/* Metrics section */
+.metrics {
+  margin-top: 0.8rem;
+}
+.metrics p {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 0.3rem 0;
+  font-weight: 500;
+}
+.metrics p strong {
+  color: #000;
+}
+
+
 @media screen and (max-width: 450px) {
   .work .button-group{
     width: 100%;
@@ -281,17 +347,33 @@ header .navbar ul li a:hover{
   .work .box-container{
     margin: 0rem;
   }
-  .work .box-container .grid-item .box{
-    width: 95% !important;
+}
+
+@media (max-width: 900px) {
+  .work .box-container .box {
+    width: calc(50% - 2rem);
   }
 }
 
+@media (max-width: 600px) {
+  .work .box-container .box {
+    width: 100%;
+  }
+}
+
+
+
 /* back to home button */
-.backbtn{
+.backbtn {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
-  margin-top: 4rem;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 100%;
+  clear: both;
+  pointer-events: auto;
+  z-index: 5; 
 }
 .backbtn .btn {
   position: relative;
