@@ -111,24 +111,35 @@ function showSkills(skills) {
 }
 
 function showProjects(projects) {
-    let projectsContainer = document.querySelector("#work .box-container");
-    let projectHTML = "";
-    projects.slice(0, 10).filter(project => project.category != "android").forEach(project => {
-        projectHTML += `
+  let projectsContainer = document.querySelector("#work .box-container");
+  let projectHTML = "";
+
+  projects
+    .slice(0, 10)
+    .filter(project => project.category != "android")
+    .forEach(project => {
+      const tagsHTML = project.tags
+        ? `<div class="tags">
+            ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join("")}
+           </div>`
+        : "";
+
+      projectHTML += `
         <div class="box tilt">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
-        <div class="tag">
-        <h3>${project.name}</h3>
-        </div>
-        <div class="desc">
-          <p>${project.desc}</p>
-          <div class="btns">
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+          <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
+          <div class="content">
+            <div class="tag">
+              <h3>${project.name}</h3>
+            </div>
+            <div class="desc">
+              <p>${project.desc}</p>
+              ${tagsHTML}
+              <div class="btns">
+                <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>`
+        </div>`;
     });
     projectsContainer.innerHTML = projectHTML;
 
@@ -157,6 +168,15 @@ function showProjects(projects) {
 fetchData().then(data => {
     showSkills(data);
 });
+
+setTimeout(() => {
+  document.querySelectorAll('.work .box-container .box').forEach(box => {
+    box.addEventListener('mouseleave', () => {
+      const content = box.querySelector('.content');
+      content.scrollTop = 0;
+    });
+  });
+}, 400); 
 
 fetchData("projects").then(data => {
     showProjects(data);

@@ -801,13 +801,19 @@ header .navbar ul li a:hover {
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 85%;
+  top: 83%;
   left: 0;
   background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   padding: 1rem;
   font-size: 1.3rem;
+  overflow-y: auto;
+      transition:
+    top 0.4s ease-in-out,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  transform: translateY(20px);
 }
 .work .box-container .box .content .tag {
   display: flex;
@@ -823,7 +829,9 @@ header .navbar ul li a:hover {
   font-size: 2rem;
 }
 .work .box-container .box:hover .content {
-  top: 25%;
+  top: 0;
+    opacity: 1;
+  transform: translateY(0);
 }
 .work .desc {
   margin: 2rem;
@@ -892,6 +900,20 @@ header .navbar ul li a:hover {
 }
 .work .viewall .btn:hover i {
   transform: translateX(5px);
+}
+.project-tag {
+  display: inline-block;
+  background-color: #ffcc00;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  margin: 0.2rem 0.4rem 0 0;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.project-tag:hover {
+  background-color: #f6eb88;
 }
 /* work section ends */
 

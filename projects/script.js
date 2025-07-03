@@ -58,12 +58,6 @@ function showProjects(projects) {
             ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
           </div>` : ''}
 
-          ${project.metrics ? `<div class="metrics">
-            ${Object.entries(project.metrics).map(([key, value]) => 
-              `<p><strong>${key.replace(/_/g, ' ')}:</strong> ${value}</p>`
-            ).join('')}
-          </div>` : ''}
-
           <div class="btns">
             <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
           </div>
@@ -100,14 +94,6 @@ function showProjects(projects) {
 
   //srtop.reveal('.work .box', { interval: 200 });
 
-
-    function initIsotope() {
-    $grid = $('.box-container').isotope({
-        itemSelector: '.grid-item',
-        layoutMode: 'fitRows'
-    });
-}
-
 }
 
     // filter items on button click
@@ -121,7 +107,24 @@ function showProjects(projects) {
 
 getProjects().then(data => {
     showProjects(data);
+    
 })
+
+function initIsotope() {
+  $grid = $('.box-container').isotope({
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows'
+  });
+}
+
+document.querySelectorAll('.work .box-container .box').forEach(box => {
+  box.addEventListener('mouseleave', () => {
+    const content = box.querySelector('.content');
+    setTimeout(() => {
+      content.scrollTop = 0;
+    }, 400); // match the transition duration (in ms)
+  });
+});
 // fetch projects end
 
 // Start of Tawk.to Live Chat

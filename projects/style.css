@@ -225,11 +225,16 @@ header .navbar ul li a:hover{
   height: 100%;
   width:100%;
   position: absolute;
-  top:85%; left:0;
+  top:80%; left:0;
   background:rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+    transition:
+    top 0.4s ease-in-out,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+  transform: translateY(20px);
 }
 .work .box-container .box .content .tag{
   display: flex;
@@ -245,7 +250,9 @@ header .navbar ul li a:hover{
   font-size: 2rem;
 }
 .work .box-container .box:hover .content{
-  top: 25%;
+  top: 0;
+  opacity: 1;
+  transform: translateY(0);
 }
 .work .desc {
   margin: 2rem;
@@ -292,7 +299,7 @@ header .navbar ul li a:hover{
   color: #ffffff;
 }
 
-
+/* Project tags */
 .project-tag {
   display: inline-block;
   background-color: #ffcc00;
@@ -305,24 +312,7 @@ header .navbar ul li a:hover{
   transition: background-color 0.3s ease;
 }
 .project-tag:hover {
-  background-color: #ffe44d;
-}
-
-
-/* Project tags */
-.project-tag {
-  display: inline-block;
-  background-color: #011aff;
-  color: white;
-  font-size: 1.2rem;
-  padding: 0.3rem 0.9rem;
-  margin: 0.3rem 0.3rem 0 0;
-  border-radius: 20px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-.project-tag:hover {
-  background-color: #02094b;
+  background-color: #f6eb88;
 }
 
 /* Metrics section */

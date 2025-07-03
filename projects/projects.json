@@ -1,88 +1,25 @@
 [
 {
   "name": "Troubleshooting Chatbot",
-  "desc": "EA web-based AI chatbot designed to assist users in diagnosing and resolving common technical issues. Built with a JavaScript frontend and a Python (Flask) backend, the bot uses NLP techniques (via spaCy, NLTK, and Hugging Face transformers) to analyze user queries, detect intent, and provide relevant solutions. Includes sentiment detection, entity recognition, and a fallback escalation option for complex cases. Integrated with support documentation and optimized for real-time response.",
-  "category": "nlp",
+  "desc": "A web-based AI chatbot that helps users diagnose and resolve technical issues using NLP. Built with JavaScript and Flask, it analyzes queries, detects intent, and offers solutions with support for sentiment, entities, and fallback escalation.",
+  "category": "ai",
   "image": "chatbot",
-  "tags": ["NLP", "BERT", "Regex", "Flask"],
-  "metrics": {
-    "accuracy": "92%",
-    "resumes_processed": "1,200+"
-  },
+  "tags": ["NLP", "Python", "Transformers", "Flask"],
+
   "links": {
     "code": "https://github.com/omer-elwaleed/Troubleshooting_Chatbot"
   }
 },
 {
   "name": "Resume Parser AI",
-  "desc": "Extracts structured info from resumes using BERT + regex.",
-  "category": "nlp",
-  "image": "omer1",
-  "tags": ["NLP", "BERT", "Regex", "Flask"],
-  "metrics": {
-    "accuracy": "92%",
-    "resumes_processed": "1,200+"
-  },
+  "desc": "An AI-driven Python simulation for warehouse management using autonomous robots. The system uses intelligent task allocation, conflict resolution, and reward-based learning to optimize item retrieval and restocking in a multi-agent environment.",
+  "category": "ai",
+  "image": "multi-amazon-warehouse2",
+  "tags": ["AI Agents", "Python", "Autonomous Agents", "Reinforcement Learning"],
+
   "links": {
-    "code": "https://github.com/your-repo"
-  }
-},
-{
-  "name": "Resume Parser AI",
-  "desc": "Extracts structured info from resumes using BERT + regex.",
-  "category": "nlp",
-  "image": "omer1",
-  "tags": ["NLP", "BERT", "Regex", "Flask"],
-  "metrics": {
-    "accuracy": "92%",
-    "resumes_processed": "1,200+"
-  },
-  "links": {
-    "code": "https://github.com/your-repo"
-  }
-},
-{
-  "name": "Resume Parser AI",
-  "desc": "Extracts structured info from resumes using BERT + regex.",
-  "category": "nlp",
-  "image": "omer1",
-  "tags": ["NLP", "BERT", "Regex", "Flask"],
-  "metrics": {
-    "accuracy": "92%",
-    "resumes_processed": "1,200+"
-  },
-  "links": {
-    "code": "https://github.com/your-repo"
-  }
-},
-{
-  "name": "Resume Parser AI",
-  "desc": "Extracts structured info from resumes using BERT + regex.",
-  "category": "nlp",
-  "image": "omer1",
-  "tags": ["NLP", "BERT", "Regex", "Flask"],
-  "metrics": {
-    "accuracy": "92%",
-    "resumes_processed": "1,200+"
-  },
-  "links": {
-    "code": "https://github.com/your-repo"
-  }
-},
-{
-  "name": "Resume Parser AI",
-  "desc": "Extracts structured info from resumes using BERT + regex.",
-  "category": "nlp",
-  "image": "omer1",
-  "tags": ["NLP", "BERT", "Regex", "Flask"],
-  "metrics": {
-    "accuracy": "92%",
-    "resumes_processed": "1,200+"
-  },
-  "links": {
-    "code": "https://github.com/your-repo"
+    "code": "https://github.com/omer-elwaleed/Troubleshooting_Chatbot/blob/main/warehouse-sim.py"
   }
 }
-
 
 ]
