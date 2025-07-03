@@ -1,5 +1,19 @@
 [
 {
+  "name": "Troubleshooting Chatbot",
+  "desc": "Extracts structured info from resumes using BERT + regex.",
+  "category": "nlp",
+  "image": "chatbot",
+  "tags": ["NLP", "BERT", "Regex", "Flask"],
+  "metrics": {
+    "accuracy": "92%",
+    "resumes_processed": "1,200+"
+  },
+  "links": {
+    "code": "https://github.com/omer-elwaleed/Troubleshooting_Chatbot"
+  }
+},
+{
   "name": "Resume Parser AI",
   "desc": "Extracts structured info from resumes using BERT + regex.",
   "category": "nlp",
@@ -10,7 +24,6 @@
     "resumes_processed": "1,200+"
   },
   "links": {
-    "view": "https://your-live-demo.com",
     "code": "https://github.com/your-repo"
   }
 },
@@ -25,7 +38,6 @@
     "resumes_processed": "1,200+"
   },
   "links": {
-    "view": "https://your-live-demo.com",
     "code": "https://github.com/your-repo"
   }
 },
@@ -40,7 +52,6 @@
     "resumes_processed": "1,200+"
   },
   "links": {
-    "view": "https://your-live-demo.com",
     "code": "https://github.com/your-repo"
   }
 },
@@ -55,7 +66,6 @@
     "resumes_processed": "1,200+"
   },
   "links": {
-    "view": "https://your-live-demo.com",
     "code": "https://github.com/your-repo"
   }
 },
@@ -70,22 +80,6 @@
     "resumes_processed": "1,200+"
   },
   "links": {
-    "view": "https://your-live-demo.com",
-    "code": "https://github.com/your-repo"
-  }
-},
-{
-  "name": "Resume Parser AI",
-  "desc": "Extracts structured info from resumes using BERT + regex.",
-  "category": "nlp",
-  "image": "omer1",
-  "tags": ["NLP", "BERT", "Regex", "Flask"],
-  "metrics": {
-    "accuracy": "92%",
-    "resumes_processed": "1,200+"
-  },
-  "links": {
-    "view": "https://your-live-demo.com",
     "code": "https://github.com/your-repo"
   }
 }

@@ -80,10 +80,6 @@
         "icon": "./assets/images/langchain_logo.png"
     },
     {
-        "name": "Flask",
-        "icon": "./assets/images/icons8-flask-64.png"
-    },
-    {
         "name": "IBM Watson",
         "icon": "./assets/images/icons8-ibm-watson-50.png"
     }
