@@ -68,7 +68,7 @@ function showProjects(projects) {
 
   projectsContainer.innerHTML = projectHTML;
 
-// Re-apply tilt animation
+  // Re-apply tilt animation
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
     speed: 400,
@@ -76,7 +76,7 @@ function showProjects(projects) {
     "max-glare": 0.3
     });
 
-// Reinitialize Isotope
+  // Reinitialize Isotope
     initIsotope();
     $grid.isotope('reloadItems');
     $grid.isotope('layout');
@@ -85,12 +85,12 @@ function showProjects(projects) {
     max: 15,
   });
 
- // const srtop = ScrollReveal({
+  // const srtop = ScrollReveal({
    // origin: 'top',
     //distance: '80px',
     //duration: 1000,
     //reset: true
-  //});
+    //});
 
   //srtop.reveal('.work .box', { interval: 200 });
 
