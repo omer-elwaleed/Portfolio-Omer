@@ -485,8 +485,21 @@ header .navbar ul li a.download-resume:hover {
 /* hero section end */
 
 /* about section starts */
+#particles-about {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
 .about {
-  background: radial-gradient(circle at center, #2c2c2c 0%, #1a1a1a 70%, #000 100%);
+  position: relative;
+  z-index: 1;
+}
+.about {
+  background: #000;
 }
 .about .row {
   display: flex;
@@ -613,7 +626,8 @@ header .navbar ul li a.download-resume:hover {
   transform: scale(1.05);
 }*/
 
-/* Highlights List */
+/* skills */
+
 .highlights {
   list-style: none;
   padding-left: 0;
@@ -745,9 +759,21 @@ header .navbar ul li a.download-resume:hover {
 /* about section ends */
 
 /* skills section starts */
+#particles-skills {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
 .skills {
   min-height: 90vh;
-  background: radial-gradient(circle at center, #2c2c2c 0%, #1a1a1a 70%, #000 100%);
+  background:#000;
+  position: relative;
+  z-index: 1;
 }
 .skills h2 {
   color: #fff;
@@ -819,10 +845,23 @@ header .navbar ul li a.download-resume:hover {
 /* skills section ends */
 
 /* education section starts */
-.education {
-  background: radial-gradient(circle at center, #2c2c2c 0%, #1a1a1a 70%, #000 100%);
-  min-height: 80vh;
+#particles-education {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
+
+.education {
+  background: #000;
+  min-height: 80vh;
+  position: relative;
+  z-index: 1;
+}
+
 .education .qoute {
   font-size: 1.5rem;
   text-align: center;
@@ -972,9 +1011,20 @@ header .navbar ul li a.download-resume:hover {
 /* certification section ends */
 
 /* work section starts */
+#particles-work {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
 .work {
   /* background: #010124; */
-  background: radial-gradient(circle at center, #2c2c2c 0%, #1a1a1a 70%, #000 100%);
+  background: #000;
+  position: relative;
+  z-index: 1;
 }
 .work h2 {
   color: #fff;
@@ -1128,22 +1178,42 @@ header .navbar ul li a.download-resume:hover {
 /* work section ends */
 
 /* experience section starts */
+#particles-experience {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.experience {
+  position: relative;
+  z-index: 1;
+}
+
+.experience {
+  background-color: #000000;
+}
+
 .experience .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  
 }
 .experience .timeline::after {
   content: "";
   position: absolute;
   width: 6px;
-  background: radial-gradient(circle at center, #2c2c2c 0%, #1a1a1a 70%, #000 100%);
+  background-color: #b6b6b6 ;
   top: 0;
   bottom: 0;
   left: 50%;
   margin-left: -3px;
-  z-index: -2;
+  z-index: 1;
 }
+
 .experience .container {
   padding: 10px 40px;
   position: relative;
@@ -1165,7 +1235,7 @@ header .navbar ul li a.download-resume:hover {
   font-size: 1.89rem;
   text-align: center;
   font-weight: 600;
-  color: #02094b;
+  color: #000000;
   font-family: "Font Awesome\ 5 Free";
 }
 .experience .left {
@@ -1299,9 +1369,21 @@ header .navbar ul li a.download-resume:hover {
 /* experience section ends */
 
 /* contact section starts */
+#particles-contact {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
 .contact {
-  background: radial-gradient(circle at center, #2c2c2c 0%, #1a1a1a 70%, #000 100%);
+  background: #000;
   min-height: 60vh;
+  position: relative;
+  z-index: 1;
 }
 .contact .container {
   max-width: 1050px;
@@ -1457,10 +1539,21 @@ form .button-area {
 /* contact section ends */
 
 /* footer section starts */
+#particles-footer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
 .footer {
   min-height: auto;
   padding-top: 0;
   background: radial-gradient(circle at center, #2c2c2c 0%, #1a1a1a 70%, #000 100%);
+  position: relative;
+  z-index: 1;
 }
 .footer .box-container {
   display: flex;

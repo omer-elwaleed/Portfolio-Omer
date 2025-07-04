@@ -66,9 +66,9 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("user_TTDmetQLYgWCLzHTDgqxm");
+        emailjs.init("9tgOZPQ4UuPaPYM6c");
 
-        emailjs.sendForm('contact_service', 'template_contact', '#contact-form')
+        emailjs.sendForm('service_kd5twhq', 'template_vd12kut', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -243,6 +243,200 @@ document.onkeydown = function (e) {
         return false;
     }
 }
+
+//particles
+particlesJS("particles-experience", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
+});
+
+particlesJS("particles-about", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
+});
+
+particlesJS("particles-skills", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
+});
+
+particlesJS("particles-education", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
+});
+
+
+particlesJS("particles-contact", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
+});
+
+
+particlesJS("particles-work", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
+});
+
+
+particlesJS("particles-footer", {
+  particles: {
+    number: { value: 50 },
+    color: { value: "#ffffff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.3 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.2,
+      width: 1
+    },
+    move: { enable: true, speed: 1 }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false },
+      resize: true
+    }
+  },
+  retina_detect: true
+});
+
 
 // Start of Tawk.to Live Chat
 var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
