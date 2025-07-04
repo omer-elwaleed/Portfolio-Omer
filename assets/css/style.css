@@ -247,6 +247,7 @@ header .navbar ul li a:hover {
   color: #000;
   font-weight: 600;
   padding: 1rem 0;
+  margin-bottom: 2rem; 
 }
 .home .content p span {
   font-size: 2.5rem;
@@ -284,7 +285,7 @@ header .navbar ul li a:hover {
 /* social icons start */
 .socials {
   position: relative;
-  margin-top: 9rem;
+  margin-top: 4rem;
 }
 .socials .social-icons {
   padding-left: 0;
@@ -396,7 +397,7 @@ header .navbar ul li a:hover {
   margin-top: 1rem;
 }
 .about .row .content p {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-top: 1.5rem;
   font-family: "Nunito";
   font-weight: 600;
@@ -481,10 +482,79 @@ header .navbar ul li a:hover {
   transform: scale(1.05);
 }
 
+/* Highlights List */
+.highlights {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.highlights li {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.highlights i {
+  color: #2506ad;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+
+/* Soft Skills Badges */
+.soft-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.skill-tag {
+  background: #f0f0f0;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.skill-tag:hover {
+  background: #2506ad;
+  color: white;
+}
+@media (max-width: 768px) {
+  .highlights li {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .highlights i {
+    font-size: 1.4rem;
+  }
+
+  .soft-skills {
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .skill-tag {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.2rem;
+  }
+}
+
+
 /* about media queries ends*/
 
 /* info section (About Me contact cards) starts */
-.info-container {
+/*.info-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -537,7 +607,7 @@ header .navbar ul li a:hover {
   .info-box {
     width: 100%;
   }
-}
+} */
 /* info section ends */
 
 /* about section ends */
