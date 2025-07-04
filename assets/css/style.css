@@ -210,6 +210,13 @@ header .navbar ul li a:hover {
   flex: 1 1 40rem;
   padding-top: 1rem;
   z-index: 1;
+  text-align: center; 
+  display: flex;              /* ✅ Enable flex layout */
+  flex-direction: column;     /* ✅ Stack elements vertically */
+  align-items: center;        /* ✅ Center child elements horizontally */
+  justify-content: center;    /* ✅ Center content vertically */
+  min-height: 100vh;          /* Optional: makes it full-screen height */
+  padding: 2rem;
 }
 .home .image {
   flex: 1 1 40rem;
@@ -249,7 +256,6 @@ header .navbar ul li a:hover {
 }
 .home .btn {
   margin-top: 1rem;
-  position: absolute;
   line-height: 0;
   padding: 1.6rem 3rem;
   border-radius: 4em;
