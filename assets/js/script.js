@@ -1,5 +1,32 @@
 $(document).ready(function () {
 
+ // document.addEventListener("DOMContentLoaded", function () {
+   // const themeCheckbox = document.getElementById("toggle-checkbox");
+    //themeCheckbox.addEventListener("change", function () {
+      //document.body.classList.toggle("dark-mode", this.checked);
+    //});
+ // });
+
+    // Dark mode toggle
+
+
+
+    $(document).on("click", function (e) {
+  const $menuIcon = $("#menu");
+  const $navbar = $(".navbar");
+
+  if (
+    $navbar.hasClass("nav-toggle") && // navbar is open
+    !$navbar.is(e.target) &&          // clicked outside .navbar
+    $navbar.has(e.target).length === 0 &&
+    !$menuIcon.is(e.target) &&        // clicked outside #menu icon
+    $menuIcon.has(e.target).length === 0
+  ) {
+    $menuIcon.removeClass("fa-times");
+    $navbar.removeClass("nav-toggle");
+  }
+});
+
     $('#menu').click(function () {
         $(this).toggleClass('fa-times');
         $('.navbar').toggleClass('nav-toggle');
