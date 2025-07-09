@@ -11,7 +11,7 @@
   }
 },
 {
-  "name": "Resume Parser AI",
+  "name": "Warehouse Robotics Simulation",
   "desc": "An AI-driven Python simulation for warehouse management using autonomous robots. The system uses intelligent task allocation, conflict resolution, and reward-based learning to optimize item retrieval and restocking in a multi-agent environment.",
   "category": "ai",
   "image": "multi-amazon-warehouse2",
