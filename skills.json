@@ -21,7 +21,7 @@
             "icon": "sliders-h"
         },
         {
-            "name": "Hazardous Area Awareness",
+            "name": "Hazardous Area Classification",
             "icon": "exclamation-triangle"
         },
         {
@@ -31,39 +31,27 @@
         {
             "name": "PLC",
             "icon": "microchip"
-        },
-        {
-            "name": "SCADA",
-            "icon": "network-wired"
-        },
-        {
-            "name": "HMI",
-            "icon": "desktop"
         }
     ],
     "standards": [
         {
-            "name": "NFPA",
+            "name": "NFPA (National Fire Protection Association)",
             "icon": "fire-extinguisher"
         },
         {
-            "name": "API",
+            "name": "API (American Petroleum Institute)",
             "icon": "gas-pump"
         },
         {
-            "name": "IOGP",
+            "name": "IOGP (International Association of Oil & Gas Producers)",
             "icon": "industry"
         },
         {
-            "name": "ADNOC HSE",
+            "name": "ADNOC HSE (Abu Dhabi National Oil Company – Health, Safety & Environment)",
             "icon": "user-shield"
         },
         {
-            "name": "UAE Fire & Life Safety Code",
-            "icon": "fire"
-        },
-        {
-            "name": "IEC 61511/62443",
+            "name": "IEC 61511/62443 (International Electrotechnical Commission)",
             "icon": "shield-alt"
         }
     ],
