@@ -5,12 +5,40 @@
             "icon": "wave-square"
         },
         {
-            "name": "P&ID Interpretation",
+            "name": "P&ID and Single Line Diagram Interpretations",
             "icon": "project-diagram"
         },
         {
             "name": "Electrical Safety",
             "icon": "bolt"
+        },
+        {
+            "name": "Industrial Electrical Systems",
+            "icon": "plug"
+        },
+        {
+            "name": "Power & Control Systems",
+            "icon": "sliders-h"
+        },
+        {
+            "name": "Hazardous Area Awareness",
+            "icon": "exclamation-triangle"
+        },
+        {
+            "name": "System Reliability",
+            "icon": "check-double"
+        },
+        {
+            "name": "PLC",
+            "icon": "microchip"
+        },
+        {
+            "name": "SCADA",
+            "icon": "network-wired"
+        },
+        {
+            "name": "HMI",
+            "icon": "desktop"
         }
     ],
     "standards": [
@@ -60,6 +88,18 @@
             "name": "MS Office",
             "icon": "microsoft",
             "style": "fab"
+        },
+        {
+            "name": "AutoCAD Electrical",
+            "icon": "drafting-compass"
+        },
+        {
+            "name": "ETAP",
+            "icon": "chart-line"
+        },
+        {
+            "name": "MATLAB",
+            "icon": "calculator"
         }
     ]
 }
