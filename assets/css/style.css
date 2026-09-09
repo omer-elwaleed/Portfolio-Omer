@@ -1076,8 +1076,88 @@ header .navbar ul li a.download-resume:hover {
   color: #fff;
   padding: 1rem;
 }
-.work .heading span {
-  color: rgb(255, 230, 0);
+.work .project-highlight {
+  max-width: 110rem;
+  margin: 3rem auto 0;
+  padding: 3.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(5, 248, 252, 0.2);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+  box-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.35);
+}
+.work .phl-number-wrap {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-right: 3.5rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.work .phl-number {
+  font-size: 5.5rem;
+  font-weight: 800;
+  color: #05f8fc;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+}
+.work .phl-number-label {
+  font-size: 1.2rem;
+  color: #b6b6b6;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  max-width: 14rem;
+  line-height: 1.5;
+}
+.work .phl-body {
+  flex: 1 1 auto;
+}
+.work .phl-text {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #e6e6e6;
+  text-transform: none;
+}
+.work .phl-text strong {
+  color: #05f8fc;
+  font-weight: 600;
+  text-transform: none;
+}
+.work .phl-clients {
+  margin-top: 2.2rem;
+}
+.work .phl-clients-label {
+  display: block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #808080;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+}
+.work .phl-clients .soft-skills {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 768px) {
+  .work .project-highlight {
+    flex-direction: column;
+    padding: 2.2rem;
+    gap: 2.2rem;
+    margin: 2rem 1.5rem 0;
+  }
+  .work .phl-number-wrap {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-right: 0;
+    padding-bottom: 2rem;
+    width: 100%;
+  }
+  .work .phl-text {
+    font-size: 1.3rem;
+  }
 }
 .work .box-container {
   display: flex;
