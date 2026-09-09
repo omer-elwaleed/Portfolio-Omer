@@ -800,8 +800,7 @@ header .navbar ul li a.download-resume:hover {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
   gap: 1.8rem;
 }
 .skills .container .skills-group {
@@ -821,31 +820,44 @@ header .navbar ul li a.download-resume:hover {
 }
 .skills .container .bar {
   margin-bottom: 15px;
-  padding: 10px;
+  padding: 2.2rem 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   background: rgba(0, 0, 0, 0.9);
-  transition: 0.2s;
+  border: 1px solid rgba(5, 248, 252, 0.15);
+  transition: 0.25s;
 }
 .skills .container .bar:hover {
-  box-shadow: 0 8px 10px #05f8fc !important;
-  background-color: transparent !important;
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(5, 248, 252, 0.35) !important;
+  border-color: #05f8fc;
+  background-color: rgba(0, 0, 0, 0.95) !important;
 }
 .skills .container .bar .info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1.3rem;
 }
-.skills .container .bar .info i {
-  font-size: 4rem;
+.skills .container .bar .info .icon-badge {
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #05f8fc, #04c6c9);
+  flex-shrink: 0;
+}
+.skills .container .bar .info .icon-badge i {
+  font-size: 2.8rem;
+  color: #0d0d0d;
 }
 .skills .container .bar .info span {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.7rem;
+  font-weight: 600;
   font-family: "Poppins";
-  margin-left: 0.5rem;
+  text-align: center;
 }
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
@@ -858,6 +870,13 @@ header .navbar ul li a.download-resume:hover {
     margin: 1rem;
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
+  }
+  .skills .container .bar .info .icon-badge {
+    width: 5rem;
+    height: 5rem;
+  }
+  .skills .container .bar .info .icon-badge i {
+    font-size: 2.1rem;
   }
   .skills .container .skills-group-title {
     font-size: 1.4rem;

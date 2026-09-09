@@ -20,7 +20,7 @@
         },
         {
             "name": "API",
-            "icon": "certificate"
+            "icon": "gas-pump"
         },
         {
             "name": "IOGP",
@@ -46,7 +46,7 @@
         },
         {
             "name": "SAFETI",
-            "icon": "hard-hat"
+            "icon": "chart-area"
         },
         {
             "name": "DNV KFX",

@@ -147,7 +147,7 @@ function showSkills(data) {
             html += `
             <div class="bar">
               <div class="info">
-                <i class="${skill.style || 'fas'} fa-${skill.icon}"></i>
+                <div class="icon-badge"><i class="${skill.style || 'fas'} fa-${skill.icon}"></i></div>
                 <span>${skill.name}</span>
               </div>
             </div>`;
