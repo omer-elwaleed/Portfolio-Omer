@@ -38,10 +38,18 @@ html::-webkit-scrollbar {
   width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
-  background: rgb(235, 202, 245);
+  background: #0d0d0d;
 }
 html::-webkit-scrollbar-thumb {
-  background: #420177;
+  background: #05f8fc;
+  border-radius: 1rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #04c6c9;
+}
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #05f8fc #0d0d0d;
 }
 
 /* pre loader start */

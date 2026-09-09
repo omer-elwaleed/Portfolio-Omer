@@ -61,8 +61,9 @@
             "icon": "fire-alt"
         },
         {
-            "name": "MS Excel",
-            "icon": "file-excel"
+            "name": "MS Office",
+            "icon": "microsoft",
+            "style": "fab"
         }
     ]
 }
