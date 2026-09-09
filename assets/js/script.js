@@ -96,20 +96,25 @@ $(document).ready(function () {
    // });
 
 // <!-- typed js effect starts -->
-var typed = new Typed(".typing-text", {
-    strings: [
-      "AI &amp; Machine Learning",
-      "Building AI-Powered Chatbots",
-      "Automation &amp; APIs",
-      "frontend development",
-      "web development",
-      "Creative Coding"
-    ],
-    loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 500,
-});
+// Guarded: the .typing-text element is currently commented out of the markup.
+// Typed.js throws if its target selector matches nothing, which would otherwise
+// abort every script statement below it on this page (skills, projects, particles).
+if (document.querySelector(".typing-text")) {
+    var typed = new Typed(".typing-text", {
+        strings: [
+          "AI &amp; Machine Learning",
+          "Building AI-Powered Chatbots",
+          "Automation &amp; APIs",
+          "frontend development",
+          "web development",
+          "Creative Coding"
+        ],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 25,
+        backDelay: 500,
+    });
+}
 // <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
