@@ -11,10 +11,6 @@
         {
             "name": "Electrical Safety",
             "icon": "bolt"
-        },
-        {
-            "name": "SIS / ESD",
-            "icon": "power-off"
         }
     ],
     "standards": [
