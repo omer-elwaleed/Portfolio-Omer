@@ -796,6 +796,21 @@ header .navbar ul li a.download-resume:hover {
   flex-wrap: wrap;
   gap: 1.8rem;
 }
+.skills .container .skills-group {
+  margin-bottom: 2.5rem;
+}
+.skills .container .skills-group:last-child {
+  margin-bottom: 0;
+}
+.skills .container .skills-group-title {
+  color: #05f8fc;
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  text-align: left;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
 .skills .container .bar {
   margin-bottom: 15px;
   padding: 10px;
@@ -835,6 +850,10 @@ header .navbar ul li a.download-resume:hover {
     margin: 1rem;
     padding: 2rem 0.2rem 2rem 0.2rem;
     gap: 1rem;
+  }
+  .skills .container .skills-group-title {
+    font-size: 1.4rem;
+    margin-left: 1rem;
   }
   .skills .container {
     margin-top: 5px;

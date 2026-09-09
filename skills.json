@@ -1,62 +1,68 @@
-[
-    {
-        "name": "Circuit Analysis",
-        "icon": "https://img.icons8.com/color/48/000000/electrical-sensor.png"
-    },
-    {
-        "name": "P&ID Interpretation",
-        "icon": "https://img.icons8.com/color/48/000000/blueprint.png"
-    },
-    {
-        "name": "Electrical Safety",
-        "icon": "https://img.icons8.com/color/48/000000/electrical.png"
-    },
-    {
-        "name": "SIS / ESD",
-        "icon": "https://img.icons8.com/color/48/000000/shutdown.png"
-    },
-    {
-        "name": "PHAST",
-        "icon": "https://img.icons8.com/color/48/000000/chemistry.png"
-    },
-    {
-        "name": "SAFETI",
-        "icon": "https://img.icons8.com/color/48/000000/hard-hat.png"
-    },
-    {
-        "name": "DNV KFX",
-        "icon": "https://img.icons8.com/color/48/000000/3d-select.png"
-    },
-    {
-        "name": "FLARESIM",
-        "icon": "https://img.icons8.com/color/48/000000/gas-station.png"
-    },
-    {
-        "name": "NFPA",
-        "icon": "https://img.icons8.com/color/48/000000/fire-extinguisher.png"
-    },
-    {
-        "name": "API",
-        "icon": "https://img.icons8.com/color/48/000000/certificate.png"
-    },
-    {
-        "name": "IOGP",
-        "icon": "https://img.icons8.com/color/48/000000/gas-industry.png"
-    },
-    {
-        "name": "ADNOC HSE",
-        "icon": "https://img.icons8.com/color/48/000000/oil-pump.png"
-    },
-    {
-        "name": "UAE Fire & Life Safety Code",
-        "icon": "https://img.icons8.com/color/48/000000/fire-safety.png"
-    },
-    {
-        "name": "IEC 61511/62443",
-        "icon": "https://img.icons8.com/color/48/000000/document.png"
-    },
-    {
-        "name": "MS Excel",
-        "icon": "https://img.icons8.com/color/48/000000/ms-excel.png"
-    }
-]
+{
+    "skills": [
+        {
+            "name": "Circuit Analysis",
+            "icon": "wave-square"
+        },
+        {
+            "name": "P&ID Interpretation",
+            "icon": "project-diagram"
+        },
+        {
+            "name": "Electrical Safety",
+            "icon": "bolt"
+        },
+        {
+            "name": "SIS / ESD",
+            "icon": "power-off"
+        }
+    ],
+    "standards": [
+        {
+            "name": "NFPA",
+            "icon": "fire-extinguisher"
+        },
+        {
+            "name": "API",
+            "icon": "certificate"
+        },
+        {
+            "name": "IOGP",
+            "icon": "industry"
+        },
+        {
+            "name": "ADNOC HSE",
+            "icon": "user-shield"
+        },
+        {
+            "name": "UAE Fire & Life Safety Code",
+            "icon": "fire"
+        },
+        {
+            "name": "IEC 61511/62443",
+            "icon": "shield-alt"
+        }
+    ],
+    "software": [
+        {
+            "name": "PHAST",
+            "icon": "wind"
+        },
+        {
+            "name": "SAFETI",
+            "icon": "hard-hat"
+        },
+        {
+            "name": "DNV KFX",
+            "icon": "cube"
+        },
+        {
+            "name": "FLARESIM",
+            "icon": "fire-alt"
+        },
+        {
+            "name": "MS Excel",
+            "icon": "file-excel"
+        }
+    ]
+}

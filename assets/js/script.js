@@ -127,19 +127,35 @@ async function fetchData(type = "skills") {
     return data;
 }
 
-function showSkills(skills) {
+function showSkills(data) {
     let skillsContainer = document.getElementById("skillsContainer");
-    let skillHTML = "";
-    skills.forEach(skill => {
-        skillHTML += `
-        <div class="bar">
+
+    const groups = [
+        { key: "skills", label: "Skills" },
+        { key: "standards", label: "Standards &amp; Codes" },
+        { key: "software", label: "Softwares" }
+    ];
+
+    let html = "";
+    groups.forEach(group => {
+        const items = data[group.key] || [];
+        if (!items.length) return;
+        html += `<div class="skills-group">
+          <h3 class="skills-group-title">${group.label}</h3>
+          <div class="row">`;
+        items.forEach(skill => {
+            html += `
+            <div class="bar">
               <div class="info">
-                <img src=${skill.icon} alt="skill" />
+                <i class="fas fa-${skill.icon}"></i>
                 <span>${skill.name}</span>
               </div>
-            </div>`
+            </div>`;
+        });
+        html += `</div></div>`;
     });
-    skillsContainer.innerHTML = skillHTML;
+
+    skillsContainer.innerHTML = html;
 }
 
 function showProjects(projects) {
