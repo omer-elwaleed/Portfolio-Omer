@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "name": "TAQA/ADNOC Volta Project",
+    "desc": "Performed quantitative risk assessment studies for the Volta utility plants, including a Fire and Explosion Risk Assessment (FERA), Quantitative Risk Assessment (QRA), Flare and Vent Radiation & Dispersion study, CFD (Computational Fluid Dynamics) study, and Building Fire and Safety Review (BFSR), all carried out in accordance with NFPA, IOGP, API, and ADNOC HSE standards.",
+    "category": "safety",
+    "icon": "fire-extinguisher",
+    "tags": [
+      "FERA",
+      "QRA",
+      "CFD",
+      "BFSR",
+      "NFPA",
+      "IOGP",
+      "API",
+      "ADNOC HSE"
+    ]
+  }
+]

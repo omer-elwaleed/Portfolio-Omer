@@ -221,6 +221,18 @@ header .navbar ul li a:hover{
   width:100%;
   object-fit: cover;
 }
+.work .box-container .box .icon-cover {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0d0d0d, #142425);
+}
+.work .box-container .box .icon-cover i {
+  font-size: 6rem;
+  color: #05f8fc;
+}
 .work .box-container .box .content{
   height: 100%;
   width:100%;

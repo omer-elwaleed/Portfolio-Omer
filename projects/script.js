@@ -44,9 +44,20 @@ function showProjects(projects) {
   let projectHTML = "";
 
   projects.forEach(project => {
+    const coverHTML = project.image
+      ? `<img draggable="false" src="/assets/images/projects/${project.image}.png" alt="${project.name}" />`
+      : `<div class="icon-cover"><i class="fas fa-${project.icon || "briefcase"}"></i></div>`;
+
+    const linksHTML = (project.links && (project.links.code || project.links.demo))
+      ? `<div class="btns">
+          ${project.links.demo ? `<a href="${project.links.demo}" class="btn" target="_blank"><i class="fas fa-eye"></i> View</a>` : ''}
+          ${project.links.code ? `<a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>` : ''}
+         </div>`
+      : '';
+
     projectHTML += `
     <div class="box tilt grid-item ${project.category}">
-      <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="${project.name}" />
+      ${coverHTML}
       <div class="content">
         <div class="tag"><h3>${project.name}</h3></div>
         <div class="desc">
@@ -56,9 +67,7 @@ function showProjects(projects) {
             ${project.tags.map(tag => `<span class="project-tag">${tag}</span>`).join('')}
           </div>` : ''}
 
-          <div class="btns">
-            <a href="${project.links.code}" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
-          </div>
+          ${linksHTML}
         </div>
       </div>
     </div>`;
