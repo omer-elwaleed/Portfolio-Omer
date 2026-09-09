@@ -1,28 +1,19 @@
 [
-    
     {
-        "name": "QRA",
-        "icon": "https://img.icons8.com/color/48/000000/combo-chart--v1.png"
+        "name": "Circuit Analysis",
+        "icon": "https://img.icons8.com/color/48/000000/electrical-sensor.png"
     },
     {
-        "name": "FERA",
-        "icon": "https://img.icons8.com/color/48/000000/fire-element.png"
+        "name": "P&ID Interpretation",
+        "icon": "https://img.icons8.com/color/48/000000/blueprint.png"
     },
     {
-        "name": "CFD",
-        "icon": "https://img.icons8.com/color/48/000000/wind.png"
+        "name": "Electrical Safety",
+        "icon": "https://img.icons8.com/color/48/000000/electrical.png"
     },
     {
-        "name": "EERA",
-        "icon": "https://img.icons8.com/color/48/000000/emergency-exit.png"
-    },
-    {
-        "name": "ESSA",
-        "icon": "https://img.icons8.com/color/48/000000/shield.png"
-    },
-    {
-        "name": "BFSR",
-        "icon": "https://img.icons8.com/color/48/000000/factory.png"
+        "name": "SIS / ESD",
+        "icon": "https://img.icons8.com/color/48/000000/shutdown.png"
     },
     {
         "name": "PHAST",
@@ -41,10 +32,6 @@
         "icon": "https://img.icons8.com/color/48/000000/gas-station.png"
     },
     {
-        "name": "ADNOC HSE",
-        "icon": "https://img.icons8.com/color/48/000000/oil-pump.png"
-    },
-    {
         "name": "NFPA",
         "icon": "https://img.icons8.com/color/48/000000/fire-extinguisher.png"
     },
@@ -57,20 +44,19 @@
         "icon": "https://img.icons8.com/color/48/000000/gas-industry.png"
     },
     {
-        "name": "Hazard ID",
-        "icon": "https://img.icons8.com/color/48/000000/warning-shield.png"
+        "name": "ADNOC HSE",
+        "icon": "https://img.icons8.com/color/48/000000/oil-pump.png"
     },
     {
-        "name": "Risk Assessment",
-        "icon": "https://img.icons8.com/color/48/000000/risk.png"
+        "name": "UAE Fire & Life Safety Code",
+        "icon": "https://img.icons8.com/color/48/000000/fire-safety.png"
     },
     {
-        "name": "Fire Protection",
-        "icon": "https://img.icons8.com/color/48/000000/fire-station.png"
+        "name": "IEC 61511/62443",
+        "icon": "https://img.icons8.com/color/48/000000/document.png"
     },
     {
-        "name": "Escalation Analysis",
-        "icon": "https://img.icons8.com/color/48/000000/explosion.png"
+        "name": "MS Excel",
+        "icon": "https://img.icons8.com/color/48/000000/ms-excel.png"
     }
-
 ]
