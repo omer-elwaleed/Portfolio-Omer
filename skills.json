@@ -49,10 +49,6 @@
         {
             "name": "ADNOC HSE (Abu Dhabi National Oil Company – Health, Safety & Environment)",
             "icon": "user-shield"
-        },
-        {
-            "name": "IEC 61511/62443 (International Electrotechnical Commission)",
-            "icon": "shield-alt"
         }
     ],
     "software": [
