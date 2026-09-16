@@ -1141,6 +1141,98 @@ header .navbar ul li a.download-resume:hover {
 .work .phl-clients .soft-skills {
   margin-bottom: 0;
 }
+.work .key-projects {
+  max-width: 110rem;
+  margin: 3rem auto 0;
+}
+.work .key-projects-title {
+  color: #fff;
+  font-size: 2.2rem;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.work .key-projects-title::after {
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 0.3rem;
+  background: #05f8fc;
+  margin: 0.8rem auto 0;
+  border-radius: 1rem;
+}
+.work .key-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr));
+  gap: 2rem;
+}
+.work .kp-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(5, 248, 252, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: 0.3s;
+}
+.work .kp-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.8rem 2rem rgba(5, 248, 252, 0.25);
+  border-color: #05f8fc;
+}
+.work .kp-image {
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+  display: block;
+}
+.work .kp-content {
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.work .kp-content h4 {
+  color: #fff;
+  font-size: 1.7rem;
+  margin-bottom: 0.8rem;
+  text-transform: none;
+}
+.work .kp-content p {
+  color: #b6b6b6;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  text-transform: none;
+  flex: 1;
+  margin-bottom: 1.5rem;
+}
+.work .kp-link {
+  align-self: flex-start;
+  color: #05f8fc;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border: 1px solid #05f8fc;
+  padding: 0.7rem 1.4rem;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  text-transform: none;
+}
+.work .kp-link i {
+  margin-left: 0.5rem;
+  font-size: 1.1rem;
+}
+.work .kp-link:hover {
+  background: #05f8fc;
+  color: #0d0d0d;
+}
+@media screen and (max-width: 768px) {
+  .work .key-projects {
+    margin: 2.5rem 1.5rem 0;
+  }
+  .work .key-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
 @media screen and (max-width: 768px) {
   .work .project-highlight {
     flex-direction: column;
