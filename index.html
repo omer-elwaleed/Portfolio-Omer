@@ -540,5 +540,19 @@
 
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "7b14dbcc44ff4d04ba40654bbaeb7c1b"}'></script><!-- End Cloudflare Web Analytics -->
 
+<!-- Visitor Notification (EmailJS) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function () {
+    emailjs.init({ publicKey: "9tgOZPQ4UuPaPYM6c" });
+    emailjs.send("service_kd5twhq", "template_tjpjpjm", {
+      page_url: window.location.href,
+      visit_time: new Date().toLocaleString(),
+      referrer: document.referrer || "Direct / Unknown"
+    });
+  })();
+</script>
+<!-- End Visitor Notification -->
+
 </body>
 </html>
