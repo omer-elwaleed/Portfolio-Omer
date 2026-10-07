@@ -169,11 +169,52 @@
 <script>
   (function () {
     emailjs.init({ publicKey: "9tgOZPQ4UuPaPYM6c" });
-    emailjs.send("service_kd5twhq", "template_tjpjpjm", {
+
+    function getDeviceType(ua) {
+      if (/tablet|ipad/i.test(ua)) return "Tablet";
+      if (/mobi|android|iphone/i.test(ua)) return "Mobile";
+      return "Desktop";
+    }
+    function getBrowser(ua) {
+      if (/edg/i.test(ua)) return "Edge";
+      if (/chrome/i.test(ua) && !/edg/i.test(ua)) return "Chrome";
+      if (/firefox/i.test(ua)) return "Firefox";
+      if (/safari/i.test(ua) && !/chrome/i.test(ua)) return "Safari";
+      return "Unknown browser";
+    }
+    function getOS(ua) {
+      if (/windows/i.test(ua)) return "Windows";
+      if (/mac os/i.test(ua)) return "macOS";
+      if (/android/i.test(ua)) return "Android";
+      if (/iphone|ipad|ios/i.test(ua)) return "iOS";
+      if (/linux/i.test(ua)) return "Linux";
+      return "Unknown OS";
+    }
+
+    var ua = navigator.userAgent;
+    var params = {
       page_url: window.location.href,
       visit_time: new Date().toLocaleString(),
-      referrer: document.referrer || "Direct / Unknown"
-    });
+      referrer: document.referrer || "Direct / Unknown",
+      device_type: getDeviceType(ua),
+      browser: getBrowser(ua),
+      os: getOS(ua),
+      location: "Unknown location",
+      visitor_ip: "Unknown"
+    };
+
+    fetch("https://ipwho.is/")
+      .then(function (res) { return res.json(); })
+      .then(function (geo) {
+        if (geo && geo.success !== false) {
+          params.location = [geo.city, geo.region, geo.country].filter(Boolean).join(", ");
+          params.visitor_ip = geo.ip || "Unknown";
+        }
+      })
+      .catch(function () {})
+      .finally(function () {
+        emailjs.send("service_kd5twhq", "template_tjpjpjm", params);
+      });
   })();
 </script>
 <!-- End Visitor Notification -->
