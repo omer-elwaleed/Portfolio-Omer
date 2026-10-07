@@ -168,6 +168,16 @@
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
   (function () {
+    // Mute notifications for this browser/device: visit once with ?notify=off
+    // to stop getting emails for your own visits here. ?notify=on resumes them.
+    try {
+      var qs = new URLSearchParams(window.location.search);
+      var notifyParam = qs.get("notify");
+      if (notifyParam === "off") localStorage.setItem("omer_mute_notify", "1");
+      if (notifyParam === "on") localStorage.removeItem("omer_mute_notify");
+      if (localStorage.getItem("omer_mute_notify") === "1") return;
+    } catch (e) {}
+
     emailjs.init({ publicKey: "9tgOZPQ4UuPaPYM6c" });
 
     function getDeviceType(ua) {
@@ -190,6 +200,23 @@
       if (/linux/i.test(ua)) return "Linux";
       return "Unknown OS";
     }
+    function getVisitorStatus() {
+      try {
+        var key = "omer_portfolio_visited";
+        if (localStorage.getItem(key)) return "Returning visitor";
+        localStorage.setItem(key, "1");
+        return "First-time visitor";
+      } catch (e) {
+        return "Unknown";
+      }
+    }
+    function getTimezone() {
+      try {
+        return Intl.DateTimeFormat().resolvedOptions().timeZone || "Unknown";
+      } catch (e) {
+        return "Unknown";
+      }
+    }
 
     var ua = navigator.userAgent;
     var params = {
@@ -200,7 +227,11 @@
       browser: getBrowser(ua),
       os: getOS(ua),
       location: "Unknown location",
-      visitor_ip: "Unknown"
+      visitor_ip: "Unknown",
+      visitor_status: getVisitorStatus(),
+      browser_language: navigator.language || "Unknown",
+      timezone: getTimezone(),
+      screen_size: window.screen.width + "x" + window.screen.height
     };
 
     fetch("https://ipwho.is/")
