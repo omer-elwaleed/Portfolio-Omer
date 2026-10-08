@@ -217,12 +217,21 @@
         return "Unknown";
       }
     }
+    function getTrafficSource() {
+      try {
+        var qs = new URLSearchParams(window.location.search);
+        return qs.get("src") || qs.get("utm_source") || "No tag";
+      } catch (e) {
+        return "No tag";
+      }
+    }
 
     var ua = navigator.userAgent;
     var params = {
       page_url: window.location.href,
       visit_time: new Date().toLocaleString(),
       referrer: document.referrer || "Direct / Unknown",
+      traffic_source: getTrafficSource(),
       device_type: getDeviceType(ua),
       browser: getBrowser(ua),
       os: getOS(ua),
